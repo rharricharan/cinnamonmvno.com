@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+a {
+    font-family: 'Inter';
+    font-weight: 500;
+    letter-spacing: -0.23px;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.mid-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.80);
+    padding: 8px 16px;
+    border-radius: 3px;
+    background-color: rgba(41, 11, 0, 0);
+    transition: all 0.1s ease;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    line-height: 140%;
+}
+
+.nav-link:hover {
+    background-color: rgba(41, 11, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+.nav-contact {
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    background-color: rgba(41, 11, 0, 1);
+    color: #f8f8f8;
+    margin: 0;
+    line-height: 140%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-contact:hover {
+    background-color: rgba(163, 50, 11, 1);
+}
