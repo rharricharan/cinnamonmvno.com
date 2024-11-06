@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from '../components/NavBar';
+import Spline from '@splinetool/react-spline';
 import './home.css';
 
 function Home() {
@@ -21,6 +22,19 @@ function Home() {
                                 <path d="M16.172 11.5L10.808 6.13605L12.222 4.72205L20 12.5L12.222 20.278L10.808 18.864L16.172 13.5H4V11.5H16.172Z" fill="#F8F8F8"/>
                             </svg>
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div className="sub-hero">
+                <div className="sub-hero-wrap">
+                    <div className="sub-r-hero">
+                        <div className="sub-text">
+                            <h3 className="sub-sub-p">Connecting shouldn’t be complicated.</h3>
+                            <h2 className="sub-h2">Cinnamon makes it effortless for businesses to keep the conversation going, at scale.</h2>
+                        </div>
+                    </div>
+                    <div className="sub-l-hero">
+                        <Spline scene="https://prod.spline.design/d44bjDVsZG4ISGV6/scene.splinecode" />
                     </div>
                 </div>
             </div>

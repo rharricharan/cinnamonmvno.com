@@ -81,3 +81,101 @@ img {
 .hero-cta:hover svg {
     display: block;
 }
+
+.sub-hero {
+    display: flex;
+    flex-direction: row;
+    margin-top: 146px;
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.sub-hero-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 96px;
+}
+
+.sub-l-hero {
+    width: 790px;
+    height: 420px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.sub-r-hero {
+    display: inline-block;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.sub-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.sub-sub-p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.54px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sub-h2 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -1.28px;
+    text-align: center;
+    width: 60%;
+    font-family: 'SF Pro Display';
+    margin: 0;
+    padding: 0;
+}
+
+.sub-cta {
+    padding: 12px 24px;
+    color: white;
+    background-color: rgba(163, 50, 11, 1);
+    font-weight: 500;
+    font-family: 'Inter';
+    line-height: 140%;
+    letter-spacing: -1.2px;
+    border-radius: 3px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    transition: all 0.3s ease;
+}
+
+.sub-cta svg {
+    width: 20px;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+.sub-cta:hover svg {
+    transform: translateX(6px);
+}
+
+.sub-cta:hover {
+    background-color: rgba(60, 15, 0, 1);
+}
