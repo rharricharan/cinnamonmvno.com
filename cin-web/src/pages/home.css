@@ -128,10 +128,11 @@ img {
     font-weight: 500;
     line-height: 140%;
     letter-spacing: -0.54px;
+    font-family: 'SF Pro Display';
     text-align: center;
     margin: 0;
     padding: 0;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(163, 50, 11, 1);
 }
 
 .sub-h2 {
@@ -140,6 +141,7 @@ img {
     line-height: 1.15;
     letter-spacing: -1.28px;
     text-align: center;
+    color: rgba(41, 11, 0, 1);
     width: 60%;
     font-family: 'SF Pro Display';
     margin: 0;

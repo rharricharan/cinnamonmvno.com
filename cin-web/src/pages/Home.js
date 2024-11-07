@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import NavBar from '../components/NavBar';
+import ScrollAnimation from "./components/ScrollAnimation";
 import Spline from '@splinetool/react-spline';
 import './home.css';
 
@@ -38,6 +41,22 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <main className="min-h-screen">
+                <section className="min-h-screen flex justify-center items-center bg-neutral-50">
+                    <h1 className="font-bold text-neutral-900 text-5xl">Hero section</h1>
+                </section>
+                <section>
+                    <ScrollAnimation>Welcome to the era of scroll animations.</ScrollAnimation>
+                    <ScrollAnimation>
+                    This demo seamlessly blends video content with aesthetic interactions.
+                    </ScrollAnimation>
+                    <ScrollAnimation>You navigate simply by scrolling.</ScrollAnimation>
+                    <ScrollAnimation>You've never seen everything like this before.</ScrollAnimation>
+                </section>
+                <section className="min-h-screen flex justify-center items-center bg-neutral-50">
+                    <h1 className="font-bold text-neutral-900 text-5xl">Another section</h1>
+                </section>
+            </main>
         </div>
     );
 };
