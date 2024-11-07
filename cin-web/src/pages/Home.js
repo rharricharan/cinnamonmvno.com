@@ -1,12 +1,16 @@
 "use client";
 
-import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useState } from "react";
 import NavBar from '../components/NavBar';
-import ScrollAnimation from "./components/ScrollAnimation";
+import ScrollAnimation from '../components/ScrollAnimation';
 import Spline from '@splinetool/react-spline';
 import './home.css';
 
 function Home() {
+    const [bgOpacity, setBgOpacity] = useState(0.7);
+    const [video, setVideo] = useState("/motion-1.mp4");
+
     return (
         <div className="home-wrapper">
             <NavBar />
@@ -41,20 +45,32 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <main className="min-h-screen">
-                <section className="min-h-screen flex justify-center items-center bg-neutral-50">
-                    <h1 className="font-bold text-neutral-900 text-5xl">Hero section</h1>
-                </section>
-                <section>
-                    <ScrollAnimation>Welcome to the era of scroll animations.</ScrollAnimation>
-                    <ScrollAnimation>
-                    This demo seamlessly blends video content with aesthetic interactions.
+            <main className="scroll-section">
+                <section className="scroll-content">
+                    <div className="scroll-video-wrap">
+                        <div className="overlay-video" />
+                        <AnimatePresence mode="popLayout">
+                            <motion.video
+                                className="video-tag"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                src={video}
+                                key={video}
+                                style={{ opacity: bgOpacity }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 0.7 }}
+                                exit={{ opacity: 0 }}
+                                />
+                        </AnimatePresence>
+                    </div>
+                    <ScrollAnimation video="/motion-1.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>In a world that’s always moving</ScrollAnimation>
+                    <ScrollAnimation video="/motion-2.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>
+                    Cinnamon is here to help you stay in sync.
                     </ScrollAnimation>
-                    <ScrollAnimation>You navigate simply by scrolling.</ScrollAnimation>
-                    <ScrollAnimation>You've never seen everything like this before.</ScrollAnimation>
-                </section>
-                <section className="min-h-screen flex justify-center items-center bg-neutral-50">
-                    <h1 className="font-bold text-neutral-900 text-5xl">Another section</h1>
+                    <ScrollAnimation video="/motion-3.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>We’re a partner who understands that for you, clarity is everything.</ScrollAnimation>
+                    <ScrollAnimation video="motion4.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>With us, every word, every call, every text is exactly as it should be: simple, dependable, and unbreakable.</ScrollAnimation>
                 </section>
             </main>
         </div>
