@@ -227,6 +227,7 @@ img {
     font-size: 36px;
     font-family: 'SF Pro Display';
     font-weight: 500;
+    text-align: left;
     color: rgba(41, 11, 0, 1);
     letter-spacing: -0.56px;
     margin: 0;
@@ -243,13 +244,13 @@ img {
 
 .card-com {
     display: flex;
-    gap: 16px;
+    gap: 72px;
     border-radius: 6px;
     flex-direction: column;
     justify-content: flex-end;
     align-content: flex-start;
     width: 60%;
-    padding: 36px 24px;
+    padding: 36px;
     background-color: rgba(60, 15, 0, 0.08);
 }
 
@@ -265,14 +266,14 @@ img {
 }
 
 .bttm-title-com {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     font-family: 'SF Pro Display';
     line-height: 140%;
     margin: 0;
     padding: 0;
-    color: rgba(41, 11, 0, 1);
-    letter-spacing: -0.56;
+    color: rgba(41, 11, 0, 0.9);
+    letter-spacing: -0.48px;
 }
 
 .bttn-container-com {
@@ -294,21 +295,29 @@ img {
     border-radius: 3px;
 }
 
+.card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .commit-tt-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-bottom: 72px;
     gap: 16px;
+    width: 80%;
 }
 
 .commit-p {
     font-family: 'SF Pro Display';
     font-size: 20px;
-    width: 70%;
-    text-align: center;
+    text-align: left;
     color: rgba(41, 11, 0, 0.8);
+    width: 50%;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: -0.56px;
