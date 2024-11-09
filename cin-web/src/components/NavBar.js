@@ -32,6 +32,12 @@ const NavBar = () => {
     };
   }, []);
 
+    const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  // Function to handle mouse events for showing/hiding dropdown
+  const showDropdown = () => setDropdownVisible(true);
+  const hideDropdown = () => setDropdownVisible(false);
+
   // Define the styles for the text and logo
   const textColor = scrolledPastHero ? '#1a1a1a' : '#fff'; // Change colors based on scroll
   const logoColor = scrolledPastHero ? '#1a1a1a' : '#fff'; // Same for logo SVG
@@ -46,10 +52,9 @@ const NavBar = () => {
                     </svg>
                 </a>
                 <div className="mid-nav" style={{ color: textColor }}>
-                    <a className="nav-link" style={{ color: textColor }}>solutions</a>
-                    <a className="nav-link" style={{ color: textColor }}>pricing</a>
-                    <a className="nav-link" style={{ color: textColor }}>company</a>
-                    <a className="nav-link" style={{ color: textColor }}>resources</a>
+                    <a className="nav-link" style={{ color: textColor }}>Pricing</a>
+                    <a className="nav-link" style={{ color: textColor }}>Solutions</a>
+                    <a className="nav-link" style={{ color: textColor }}>Company</a>
                 </div>
                 <a className="nav-contact">contact us</a>
             </nav>

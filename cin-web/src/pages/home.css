@@ -280,19 +280,45 @@ img {
     display: inline-block;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 36px;
+    margin-top: 20px;
 }
 
 .com-bttn {
+    color: rgba(163, 50, 11, 1);
+}
+
+.com-bttn svg {
+    width: 16px;
+}
+
+/* button animation */
+
+.bttn-container-com a {
     position: relative;
+    padding-bottom: 6px;
+    color: rgba(163, 50, 11, 1);
     display: inline-flex;
+    justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 500;
-    padding: 12px 24px;
-    gap: 16px;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.bttn-container-com a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    /* Initial border thickness */
     background-color: rgba(163, 50, 11, 1);
-    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.com-bttn:hover::after {
+    width: 100%;
+    /* Expands the bottom border smoothly */
 }
 
 .card-top {
@@ -322,4 +348,112 @@ img {
     line-height: 140%;
     letter-spacing: -0.56px;
     margin: 0;
+}
+
+.solutions-section {
+    margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solutions-wrap {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 60%;
+    float: inline-start;
+    padding: 6px;
+    background-color: rgba(41, 11, 0, 0.08);
+    border-radius: 6px;
+}
+
+.solutions-txt {
+    height: 100%;
+    width: 100%;
+    padding: 0 86px 0;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.solutions-txt h2 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'SF Pro Display';
+    letter-spacing: -1px;
+    line-height: 140%;
+    text-align: left;
+    color: rgba(41, 11, 0, 1);
+    margin: 0;
+}
+
+.solutions-txt h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Inter';
+    letter-spacing: -0.76px;
+    line-height: 160%;
+    text-align: left;
+    margin: 0;
+    color: rgba(41, 11, 0, 0.8);
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.solution-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.solution-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sol-cta {
+    font-weight: 500;
+    font-family: 'SF Pro Display';
+    font-size: 18px;
+    letter-spacing: -0.26px;
+    line-height: 140%;
+    color: rgba(163, 50, 11, 1);
+}
+
+/* button animation */
+
+.solutions-txt a {
+    position: relative;
+    padding-bottom: 6px;
+    color: rgba(163, 50, 11, 1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.solutions-txt a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    /* Initial border thickness */
+    background-color: rgba(163, 50, 11, 1);
+    transition: width 0.3s ease;
+}
+
+.sol-cta:hover::after {
+    width: 100%;
+    /* Expands the bottom border smoothly */
 }

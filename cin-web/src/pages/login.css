@@ -1,0 +1,117 @@
+.login-wrapper {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+.login-header {
+    width: 100%;
+    padding: 24px 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 790px;
+    height: 790px;
+}
+
+form input {
+    width: 300px;
+    height: 36px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'SF Pro Display';
+    letter-spacing: -0.36px;
+    color: rgba(0, 0, 0, 1);
+}
+
+form h2 {
+    color: rgba(41, 11, 0, 1);
+    font-size: 36px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+input:focus {
+    outline: 3px solid rgba(60, 15, 0, 0.1);
+}
+
+.top-input {
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.bttm-input {
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.br {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 1px;
+}
+
+button {
+    width: 300px;
+    padding: 12px 36px;
+    margin-top: 36px;
+    border: none;
+    background-color: rgba(163, 50, 11, 1);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'SF Pro Display';
+    letter-spacing: -0.26px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+button:hover {
+    background-color: rgba(41, 11, 0, 1);
+}
+
+button svg {
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease;
+    transform: translateX(0);
+}
+
+button:hover svg {
+    transform: translateX(6px);
+    display: flex;
+    opacity: 1;
+    width: 16px;
+}
