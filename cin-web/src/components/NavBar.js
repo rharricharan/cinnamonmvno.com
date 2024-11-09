@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { navigate } from 'react';
+import { useNavigate } from 'react';
 import './navbar.css';
 
 const NavBar = () => {
-
+  const navigate = useNavigate();
     const handleHome = () => {
         navigate('/');
     }
