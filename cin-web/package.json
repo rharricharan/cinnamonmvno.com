@@ -1,6 +1,7 @@
 {
   "name": "cinnamonmvno.com",
-  "homepage": "https://your-username.github.io/your-repo-name",
+  // "homepage": "https://your-username.github.io/your-repo-name",
+  //"homepage": process.env.NODE_ENV === 'production' ? "https://your-username.github.io/your-repo-name" : "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
