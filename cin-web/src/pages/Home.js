@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import NavBar from '../components/NavBar';
 import ScrollAnimation from '../components/ScrollAnimation';
 import Spline from '@splinetool/react-spline';
+import Footer from '../components/Footer';
 import './home.css';
 
 function Home() {
@@ -133,6 +134,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

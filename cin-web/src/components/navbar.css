@@ -8,6 +8,29 @@
     overflow-x: hidden;
 }
 
+/*.nav-wrapper.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+} */
+
+.navbar {
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+.navbar.active .nav-link {
+    color: #1a1a1a;
+}
+
 nav {
     padding: 24px 32px;
     display: flex;
@@ -42,12 +65,12 @@ a {
     padding: 8px 16px;
     border-radius: 3px;
     background-color: rgba(41, 11, 0, 0);
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -0.6px;
     line-height: 140%;
-    z-index: 100;
+    z-index: 20;
 }
 
 .nav-link:hover {
@@ -71,6 +94,26 @@ a {
 
 .nav-contact:hover {
     background-color: rgba(163, 50, 11, 1);
+}
+
+.ss-bttn {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.login {
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    background-color: white;
+    color: rgba(41, 11, 0, 1);
+    margin: 0;
+    line-height: 140%;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 /* Dropdown menu styles */
