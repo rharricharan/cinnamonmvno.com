@@ -1,0 +1,191 @@
+.company-hero {
+    display: flex;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 146px;
+}
+
+.left-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 650px;
+}
+
+.left-title {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'SF Pro Display';
+    line-height: 140%;
+    letter-spacing: -0.86px;
+    margin: 0;
+    color: rgba(41, 11, 0, 1);
+}
+
+.left-p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'SF Pro Display';
+    line-height: 140%;
+    letter-spacing: -0.56px;
+    margin: 0;
+    color: rgba(41, 11, 0, 0.8);
+}
+
+.right-hero {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 60%;
+    height: calc(60vh - 80px);
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.right-hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.bttn-container-company-hero {
+    margin-top: 16px;
+}
+
+.bttn-container-company-hero {
+    padding: 12px 24px;
+    color: white;
+    background-color: rgba(163, 50, 11, 1);
+    font-weight: 500;
+    font-family: 'Inter';
+    line-height: 140%;
+    letter-spacing: -0.86px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bttn-container-company-hero:hover {
+    background-color: rgba(60, 15, 0, 1);
+}
+
+.industry-wrapper {
+    width: 100%;
+    margin-top: 146px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.industry-top {
+    display: flex;
+    margin-bottom: 72px;
+}
+
+.industry-top h2 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'SF Pro Display';
+    letter-spacing: -0.86px;
+    color: rgba(41, 11, 0, 1);
+    line-height: 140%;
+    margin: 0;
+}
+
+.industry-slide {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.industry-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    background-color: rgba(60, 15, 0, 0.08);
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.in-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in-card-title {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'SF Pro Display';
+    letter-spacing: -0.86px;
+    color: rgba(41, 11, 0, 1);
+    line-height: 140%;
+    margin: 0;
+}
+
+.in-card-p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'SF Pro Display';
+    letter-spacing: -0.56px;
+    color: rgba(41, 11, 0, 1);
+    line-height: 140%;
+    margin: 0;
+}
+
+.custom-hero {
+    display: flex;
+    height: 100vh;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 146px;
+    margin-top: 72px;
+}
+
+.bttn-container-company a {
+    position: relative;
+    padding-bottom: 6px;
+    color: rgba(163, 50, 11, 1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+    margin-top: 16px;
+}
+
+.bttn-container-company a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    /* Initial border thickness */
+    background-color: rgba(163, 50, 11, 1);
+    transition: width 0.3s ease;
+}
+
+.sol-cta:hover::after {
+    width: 100%;
+    /* Expands the bottom border smoothly */
+}

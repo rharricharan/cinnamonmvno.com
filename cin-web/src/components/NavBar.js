@@ -5,6 +5,8 @@ import './navbar.css';
 const NavBar = () => {
   const navigate = useNavigate();
   const handleHome = () => navigate('/');
+  const handleSolutions = () => navigate('/solutions');
+  const handleCompany = () => navigate('/company');
   const [navbar, setNavBar] = useState(false);
 
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
@@ -35,7 +37,7 @@ useEffect(() => {
         </a>
         <div className='mid-nav'>
           <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`}>Pricing</a>
-          <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`}>Solutions</a>
+          <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`} onClick={handleSolutions}>Solutions</a>
           <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`}>Company</a>
         </div>
         <div className='ss-bttn'>
