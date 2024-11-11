@@ -38,7 +38,7 @@ useEffect(() => {
         <div className='mid-nav'>
           <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`}>Pricing</a>
           <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`} onClick={handleSolutions}>Solutions</a>
-          <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`}>Company</a>
+          <a className={`nav-link ${scrolledPastHero ? 'scrolled' : 'initial'}`} onClick={handleCompany}>Company</a>
         </div>
         <div className='ss-bttn'>
           <a className="nav-contact">Contact Us</a>
