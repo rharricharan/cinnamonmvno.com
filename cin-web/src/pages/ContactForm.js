@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import NavBarReg from '../components/NavBarReg';
+import './contact.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -32,21 +34,28 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Full Name:
-        <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-      </label>
-      <label>
-        Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-      </label>
-      <label>
-        Message:
-        <textarea name="message" value={formData.message} onChange={handleChange} required />
-      </label>
-      <button type="submit">Send Message</button>
-    </form>
+    <div className='contact-wrapper'>
+      <NavBarReg />
+      <div className='contact-wrap'>
+        <form onSubmit={handleSubmit}>
+          <div className='contact-top'>
+            <h2>Explore your solutions<br />with <span className='cin-highlight'>cinnamon</span></h2>
+          </div>
+          <div className='input-wrapper'>
+            <label>
+              <input type="text" name="name" placeholder='Full name' value={formData.name} onChange={handleChange} required />
+            </label>
+            <label>
+              <input type="email" name="email" placeholder='Email address' value={formData.email} onChange={handleChange} required />
+            </label>
+          </div>
+          <label>
+            <textarea name="message" placeholder='I own a marketing company and i am looking for a cell phone plan that could help my company expand.' value={formData.message} onChange={handleChange} required />
+          </label>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
   );
 };
 
