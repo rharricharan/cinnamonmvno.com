@@ -19,7 +19,7 @@
     font-size: 36px;
     line-height: 140%;
     margin: 0;
-    text-align: left;
+    text-align: center;
     margin-bottom: 36px;
     width: 100%;
 }
@@ -54,8 +54,12 @@ form textarea {
     height: 300px;
     border-radius: 6px;
     margin-top: 36px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    font-family: 'SF Pro Display';
+    font-size: 14px;
 }
 
-.cin-hightlight {
+.cin-highlight {
     color: rgba(163, 50, 11, 1);
 }
