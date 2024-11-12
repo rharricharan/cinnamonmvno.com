@@ -25,7 +25,7 @@ function Home() {
                         className="hero-image"
                     />
                     <div className="hero-text">
-                        <h1 className="hero-h1">Communication without Compromise.<br />Clearer, simpler, built for now.</h1>
+                        <h1 className="hero-h1">Communication without Compromise. Clearer, simpler, built for now.</h1>
                         <a className="hero-cta" onClick={() => navigate('/solutions')}>
                             Discover how
                             {/*<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -68,12 +68,12 @@ function Home() {
                                 />
                         </AnimatePresence>
                     </div>
-                    <ScrollAnimation video="/motion-1.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>In a world that’s always moving</ScrollAnimation>
-                    <ScrollAnimation video="/motion-2.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>
+                    <ScrollAnimation className="video-animation" video="/motion-1.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>In a world that’s always moving</ScrollAnimation>
+                    <ScrollAnimation className="video-animation" video="/motion-2.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>
                     Cinnamon is here to help you stay in sync.
                     </ScrollAnimation>
-                    <ScrollAnimation video="/motion-3.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>We’re a partner who understands that for you, clarity is everything.</ScrollAnimation>
-                    <ScrollAnimation video="motion4.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>With us, every touchpoint of communication is simple, dependable, and unbreakable.</ScrollAnimation>
+                    <ScrollAnimation className="video-animation" video="/motion-3.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>We’re a partner who understands that for you, clarity is everything.</ScrollAnimation>
+                    <ScrollAnimation className="video-animation" video="motion4.mp4" setVideo={setVideo} setBgOpacity={setBgOpacity}>With us, every touchpoint of communication is simple, dependable, and unbreakable.</ScrollAnimation>
                 </section>
             </main>
             <div className="commit-section">
@@ -123,7 +123,7 @@ function Home() {
                 <div className="solutions-wrap">
                     <div className="solutions-txt">
                         <h2>Our solutions are<br />reimagined for you</h2>
-                        <h3>Our solutions are tailored to make sure every<br />conversation, from quick calls to complex<br />discussions, flows effortlessly.</h3>
+                        <h3>Our solutions are tailored to make sure every conversation, from quick calls to complex discussions, flows effortlessly.</h3>
                         <a className="sol-cta" onClick={() => navigate('/contact')}>
                             Get started
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#A3320B">

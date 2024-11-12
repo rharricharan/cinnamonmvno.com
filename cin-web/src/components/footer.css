@@ -59,3 +59,19 @@
     width: 100%;
     /* Expands the bottom border smoothly */
 }
+
+@media (max-width: 1024px) {
+
+    .footer-content-wrap {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .footer-logo svg {
+        width: 100px;
+    }
+
+    .mid-wrap-f h3 {
+        font-size: 12px;
+    }
+}

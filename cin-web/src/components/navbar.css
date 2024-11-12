@@ -95,7 +95,9 @@ a {
 .ss-bttn {
     display: flex;
     flex-direction: row;
-    gap: 6px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .login {
@@ -138,4 +140,41 @@ a {
 .nav-link:hover::after {
     width: 100%;
     /* Expands the bottom border smoothly */
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .mid-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+    }
+}
+
+.mid-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.mid-nav.open .nav-link,
+.mid-nav.open .nav-contact {
+  margin: 10px 0;
+  color: #1a1a1a;
 }
