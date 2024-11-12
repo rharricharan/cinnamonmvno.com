@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from '../components/NavBar';
+import NavBarReg from '../components/NavBarReg';
 import Footer from '../components/Footer';
 import './solutions.css';
 
 function Solutions() {
     return (
         <div className="company-wrapper">
-            <NavBar />
+            <NavBarReg />
             <div className="company-hero">
                 <div className="left-hero">
                     <h2 className="left-title">
