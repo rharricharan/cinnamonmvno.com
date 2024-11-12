@@ -1,9 +1,12 @@
 import React from "react";
 import NavBarReg from '../components/NavBarReg';
 import Footer from '../components/Footer';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './solutions.css';
 
 function Solutions() {
+    const navigate = useNavigate();
+
     return (
         <div className="company-wrapper">
             <NavBarReg />
@@ -16,7 +19,7 @@ function Solutions() {
                         From enterprise teams to small businesses, we’re committed to enhancing how you connect. Our technology supports real human interactions—no frustration, just smooth, reliable communication.
                     </h3>
                     <div className="bttn-container-company-hero">
-                        <a className="company-hero-bttn">
+                        <a className="company-hero-bttn" onClick={() => navigate('/contact')}>
                             Get started
                             {/*<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                 <path d="M16.172 11.5L10.808 6.13605L12.222 4.72205L20 12.5L12.222 20.278L10.808 18.864L16.172 13.5H4V11.5H16.172Z" fill="#F8F8F8"/>
@@ -99,7 +102,7 @@ function Solutions() {
                         Our technology is crafted to integrate smoothly into your existing systems, helping your team hit the ground running without unnecessary downtime or complexity. With plug-and-play setup, Cinnamon lets you scale up or down without technical headaches, so you can focus on what you do best.
                     </h3>
                     <div className="bttn-container-company">
-                        <a className="sol-cta">
+                        <a className="sol-cta" onClick={() => navigate('/contact')}>
                             Get started
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#A3320B">
                                 <path d="M10.7813 7.33336L7.20529 3.75736L8.14796 2.8147L13.3333 8.00003L8.14796 13.1854L7.20529 12.2427L10.7813 8.6667H2.66663V7.33336H10.7813Z" fill="A3320B"/>
@@ -117,7 +120,7 @@ function Solutions() {
                         Cinnamon’s tools are designed for simplicity, accessibility, and impact, ensuring your team has everything they need to communicate effectively. We’re here to support you with seamless setup, ongoing support, and solutions that grow with your business.
                     </h3>
                     <div className="bttn-container-company">
-                        <a className="sol-cta">
+                        <a className="sol-cta" onClick={() => navigate('/contact')}>
                             Get started
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#A3320B">
                                 <path d="M10.7813 7.33336L7.20529 3.75736L8.14796 2.8147L13.3333 8.00003L8.14796 13.1854L7.20529 12.2427L10.7813 8.6667H2.66663V7.33336H10.7813Z" fill="A3320B"/>

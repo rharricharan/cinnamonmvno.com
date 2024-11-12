@@ -39,7 +39,7 @@ const ContactForm = () => {
       <div className='contact-wrap'>
         <form onSubmit={handleSubmit}>
           <div className='contact-top'>
-            <h2>Explore your solutions<br />with <span className='cin-highlight'>cinnamon</span></h2>
+            <h2>Explore your solutions<br />with <span className='cin-highlight'>cinnamon</span>.</h2>
           </div>
           <div className='input-wrapper'>
             <label>
@@ -50,7 +50,7 @@ const ContactForm = () => {
             </label>
           </div>
           <label>
-            <textarea name="message" placeholder='I own a marketing company and i am looking for a cell phone plan that could help my company expand.' value={formData.message} onChange={handleChange} required />
+            <textarea name="message" placeholder='Write message' value={formData.message} onChange={handleChange} required />
           </label>
           <button type="submit">Send Message</button>
         </form>

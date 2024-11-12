@@ -1,10 +1,13 @@
 import React from 'react';
 import './pricing.css';
 import NavBarReg from '../components/NavBarReg';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Footer from '../components/Footer';
 
 
 function Pricing() {
+    const navigate = useNavigate();
+
     return (
         <div className='pricing-wrapper'>
             <NavBarReg />
@@ -15,7 +18,7 @@ function Pricing() {
                 <h3 className='pricing-p'>
                 You deserve a communications solution that’s affordable, transparent, and built to grow with you. No hidden fees, no complicated structures – just clear pricing for clear connections.
                 </h3>
-                <a className="hero-cta-pricing">
+                <a className="hero-cta-pricing" onClick={() => navigate('/contact')}>
                     Get started
                     {/*<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                         <path d="M16.172 11.5L10.808 6.13605L12.222 4.72205L20 12.5L12.222 20.278L10.808 18.864L16.172 13.5H4V11.5H16.172Z" fill="#F8F8F8"/>
@@ -29,7 +32,7 @@ function Pricing() {
                         <div className='plan-left'>
                             <h2 className='plan-title'>Pay as you go</h2>
                             <h3 className='plan-dec'>For businesses that need flexibility, our Pay-As-You-Go option allows you to scale without overcommitting. You pay for only what you use—ideal for startups or businesses with variable communication needs.</h3>
-                            <a className="pricing-cta">
+                            <a className="pricing-cta" onClick={() => navigate('/contact')}>
                                 Get started
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#A3320B">
                                     <path d="M10.7813 7.33336L7.20529 3.75736L8.14796 2.8147L13.3333 8.00003L8.14796 13.1854L7.20529 12.2427L10.7813 8.6667H2.66663V7.33336H10.7813Z" fill="A3320B"/>
@@ -46,7 +49,7 @@ function Pricing() {
                         <div className='plan-left'>
                             <h2 className='plan-title'>Standard Plan</h2>
                             <h3 className='plan-dec'>For small-to-midsize businesses looking for a dependable communications solution with predictable costs. Get everything you need to communicate clearly with clients and partners.</h3>
-                            <a className="pricing-cta">
+                            <a className="pricing-cta" onClick={() => navigate('/contact')}>
                                 Get started
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#A3320B">
                                     <path d="M10.7813 7.33336L7.20529 3.75736L8.14796 2.8147L13.3333 8.00003L8.14796 13.1854L7.20529 12.2427L10.7813 8.6667H2.66663V7.33336H10.7813Z" fill="A3320B"/>
@@ -63,7 +66,7 @@ function Pricing() {
                         <div className='plan-left'>
                             <h2 className='plan-title'>Enterprise Custom Plans</h2>
                             <h3 className='plan-dec'>For larger organizations or those with specific needs, we offer customizable plans that adapt to the scale and scope of your operations. Whether you need thousands of lines or have unique integration needs, we’ll create a plan that works for you.</h3>
-                            <a className="pricing-cta">
+                            <a className="pricing-cta" onClick={() => navigate('/contact')}>
                                 Get started
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#A3320B">
                                     <path d="M10.7813 7.33336L7.20529 3.75736L8.14796 2.8147L13.3333 8.00003L8.14796 13.1854L7.20529 12.2427L10.7813 8.6667H2.66663V7.33336H10.7813Z" fill="A3320B"/>

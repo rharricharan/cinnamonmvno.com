@@ -6,11 +6,13 @@ import NavBar from '../components/NavBar';
 import ScrollAnimation from '../components/ScrollAnimation';
 import Spline from '@splinetool/react-spline';
 import Footer from '../components/Footer';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './home.css';
 
 function Home() {
     const [bgOpacity, setBgOpacity] = useState(0.7);
     const [video, setVideo] = useState("/motion-1.mp4");
+    const navigate = useNavigate();
 
     return (
         <div className="home-wrapper">
@@ -24,7 +26,7 @@ function Home() {
                     />
                     <div className="hero-text">
                         <h1 className="hero-h1">Communication without Compromise.<br />Clearer, simpler, built for now.</h1>
-                        <a className="hero-cta">
+                        <a className="hero-cta" onClick={() => navigate('/solutions')}>
                             Discover how
                             {/*<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                 <path d="M16.172 11.5L10.808 6.13605L12.222 4.72205L20 12.5L12.222 20.278L10.808 18.864L16.172 13.5H4V11.5H16.172Z" fill="#F8F8F8"/>
@@ -79,7 +81,7 @@ function Home() {
                     <h2 className="commit-title">Our Commitment to You</h2>
                     <h3 className="commit-p">Whether you’re a growing startup or a multinational leader, we exist to make connecting as natural as a conversation across the table.</h3>
                     <div className="bttn-container-com">
-                        <a className="com-bttn">
+                        <a className="com-bttn" onClick={() => navigate('/contact')}>
                             Get started
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="rgba(163, 50, 11, 1)">
                                 <path d="M16.172 11.5L10.808 6.13605L12.222 4.72205L20 12.5L12.222 20.278L10.808 18.864L16.172 13.5H4V11.5H16.172Z" fill="rgba(163, 50, 11, 1)"/>
@@ -122,7 +124,7 @@ function Home() {
                     <div className="solutions-txt">
                         <h2>Our solutions are<br />reimagined for you</h2>
                         <h3>Our solutions are tailored to make sure every<br />conversation, from quick calls to complex<br />discussions, flows effortlessly.</h3>
-                        <a className="sol-cta">
+                        <a className="sol-cta" onClick={() => navigate('/contact')}>
                             Get started
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#A3320B">
                                 <path d="M10.7813 7.33336L7.20529 3.75736L8.14796 2.8147L13.3333 8.00003L8.14796 13.1854L7.20529 12.2427L10.7813 8.6667H2.66663V7.33336H10.7813Z" fill="A3320B"/>
