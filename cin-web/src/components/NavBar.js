@@ -41,7 +41,7 @@ const NavBar = () => {
           <a className={`nav-link ${isCompanyPage ? 'company-active' : ''}`} onClick={() => navigate('/company')}>Company</a>
         </div>
         <div className='ss-bttn'>
-          <a className="nav-contact">Contact Us</a>
+          <a className="nav-contact" onClick={() => navigate('/contact')}>Contact Us</a>
         </div>
       </nav>
     </div>
