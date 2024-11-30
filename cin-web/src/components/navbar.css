@@ -95,7 +95,7 @@ a {
 .ss-bttn {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
